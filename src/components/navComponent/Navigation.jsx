@@ -9,7 +9,7 @@ import {
   CartBox,
 } from "./navStyles";
 
-import { NavLink, TopNavText } from "../globalComponents";
+import { NavLink, TopNavText } from "../../styledComponents/globalComponents";
 
 const Navigation = () => {
   return (

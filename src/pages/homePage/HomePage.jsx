@@ -1,12 +1,16 @@
 import React from "react";
+import FeatureSection from "../../components/homePageComponents/FeatureSection";
 import {
   HomeSlider,
-  FeaturesContainer,
-  FeatureItemContainer,
-  FeatureItemPic,
-  FeatureItemText,
-} from "./homePageStyle";
-import { Box, SectionBody } from "../../components/globalComponents";
+  ProductCardContainer,
+  ProductCard,
+  ProductCardImg,
+  CardHeader,
+  cardHeaderText,
+  cardHeaderTextSec,
+  ProductCardBody,
+} from "../../styledComponents/homePageStyle";
+import { SectionBody } from "../../styledComponents/globalComponents";
 
 const HomePage = () => {
   return (
@@ -14,37 +18,15 @@ const HomePage = () => {
       {/* home slider */}
       <HomeSlider />
       {/*home page feature sections */}
+      <FeatureSection />
+      {/* home page product items section */}
       <SectionBody>
-        <FeaturesContainer>
-          {/* feature item 1 */}
-          <Box>
-            <FeatureItemContainer>
-              <FeatureItemPic />
-              <FeatureItemText>Promising return after harvest</FeatureItemText>
-            </FeatureItemContainer>
-          </Box>
-          {/* feature item 2 */}
-          <Box>
-            <FeatureItemContainer>
-              <FeatureItemPic />
-              <FeatureItemText>Promising return after harvest</FeatureItemText>
-            </FeatureItemContainer>
-          </Box>
-          {/* feature item 3 */}
-          <Box>
-            <FeatureItemContainer>
-              <FeatureItemPic />
-              <FeatureItemText>Promising return after harvest</FeatureItemText>
-            </FeatureItemContainer>
-          </Box>
-          {/* feature item 4 */}
-          <Box>
-            <FeatureItemContainer>
-              <FeatureItemPic />
-              <FeatureItemText>Promising return after harvest</FeatureItemText>
-            </FeatureItemContainer>
-          </Box>
-        </FeaturesContainer>
+        <ProductCardContainer>
+          <ProductCard>
+            <ProductCardImg />
+            <CardHeader></CardHeader>
+          </ProductCard>
+        </ProductCardContainer>
       </SectionBody>
     </>
   );
