@@ -9,10 +9,24 @@ export const NavLink = styled(Link)`
   text-decoration: none;
 `;
 
+export const FooterLink = styled(NavLink)`
+  display: block;
+  padding: 0.5rem 0;
+`;
+
+export const Logo = styled.img`
+  background-color: green;
+  padding: 1rem;
+`;
+
 export const TopNavText = styled.p`
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
+`;
+
+export const FooterText = styled(TopNavText)`
+  font-size: 1rem;
 `;
 
 export const SectionBody = styled.section`
@@ -22,6 +36,48 @@ export const SectionBody = styled.section`
 export const Box = styled.div`
   padding: 0.5rem 1rem;
   background-color: white;
-  box-shadow: 0px 1px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
+`;
+
+export const FlexCenter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: ${({ gap }) => (gap ? gap : "0")};
+`;
+
+export const Header1 = styled.h1`
+  font-size: 2rem;
+  color: black;
+  font-weight: 500;
+`;
+export const Subtitle1 = styled.h3`
+  font-size: 1.5rem;
+  color: gray;
+  font-weight: 500;
+`;
+export const Subtitle2 = styled.h4`
+  font-size: 0.9rem;
+  color: gray;
+  font-weight: 800;
+`;
+export const Body1 = styled.p`
+  font-size: 0.85rem;
+  color: gray;
+  font-weight: 500;
+  line-height: 1.4rem;
+`;
+export const Body2 = styled.p`
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 400;
+  line-height: 1.2rem;
+`;
+
+export const Body3 = styled.p`
+  font-size: 0.9rem;
+  color: gray;
+  font-weight: 300;
+  line-height: 1.5rem;
 `;

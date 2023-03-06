@@ -4,7 +4,7 @@ import {
   FeatureItemContainer,
   FeatureItemPic,
   FeatureItemText,
-} from "../../styledComponents/homePageStyle";
+} from "../../styledComponents/homePageStyledComp";
 import { Box, SectionBody } from "../../styledComponents/globalComponents";
 
 const FeatureSection = () => {

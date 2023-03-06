@@ -7,7 +7,7 @@ import {
   NavLogo,
   BottomNavInnerContainer,
   CartBox,
-} from "./navStyles";
+} from "./navStyledComp";
 
 import { NavLink, TopNavText } from "../../styledComponents/globalComponents";
 
