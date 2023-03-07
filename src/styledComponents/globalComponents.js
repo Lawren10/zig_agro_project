@@ -52,6 +52,13 @@ export const Header1 = styled.h1`
   color: black;
   font-weight: 500;
 `;
+
+export const Header2 = styled.h2`
+  font-size: 1.2rem;
+  color: darkgreen;
+  font-weight: 600;
+`;
+
 export const Subtitle1 = styled.h3`
   font-size: 1.5rem;
   color: gray;
@@ -62,6 +69,13 @@ export const Subtitle2 = styled.h4`
   color: gray;
   font-weight: 800;
 `;
+
+export const Subtitle3 = styled.h3`
+  font-size: 1rem;
+  color: green;
+  font-weight: 200;
+`;
+
 export const Body1 = styled.p`
   font-size: 0.85rem;
   color: gray;
