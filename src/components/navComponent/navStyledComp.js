@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const NavContainer = styled.nav`
   width: 100%;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
 `;
 
 export const TopNavContainer = styled.div`

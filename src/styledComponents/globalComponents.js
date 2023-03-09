@@ -61,8 +61,8 @@ export const Header2 = styled.h2`
 
 export const Subtitle1 = styled.h3`
   font-size: 1.5rem;
-  color: gray;
-  font-weight: 500;
+  color: ${({ bold }) => (bold === "true" ? "black" : "gray")};
+  font-weight: ${({ bold }) => (bold === "true" ? "700" : "500")};
 `;
 export const Subtitle2 = styled.h4`
   font-size: 0.9rem;
@@ -71,9 +71,21 @@ export const Subtitle2 = styled.h4`
 `;
 
 export const Subtitle3 = styled.h3`
-  font-size: 1rem;
+  font-size: ${({ large }) => (large === "true" ? "2.5rem" : "1rem")};
   color: green;
   font-weight: 200;
+`;
+
+export const Subtitle4 = styled.h3`
+  font-size: 0.9rem;
+  color: gray;
+  font-weight: 200;
+`;
+
+export const Subtitle5 = styled.h3`
+  font-size: 1.5rem;
+  color: green;
+  font-weight: 100;
 `;
 
 export const Body1 = styled.p`
@@ -86,12 +98,20 @@ export const Body2 = styled.p`
   font-size: 0.8rem;
   color: gray;
   font-weight: 400;
-  line-height: 1.2rem;
+  line-height: ${({ lineSpacing }) =>
+    lineSpacing === "true" ? "2rem" : "1.2rem"};
 `;
 
 export const Body3 = styled.p`
-  font-size: 0.9rem;
+  font-size: ${({ large }) => (large === "true" ? "1.2rem" : "0.9rem")};
   color: gray;
   font-weight: 300;
   line-height: 1.5rem;
+`;
+
+export const Body4 = styled.p`
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 400;
+  line-height: 1.2rem;
 `;

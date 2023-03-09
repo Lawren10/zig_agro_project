@@ -26,7 +26,7 @@ const Navigation = () => {
           <NavLogo />
           <BottomNavInnerContainer>
             <NavLink to="/">Home</NavLink>
-            <NavLink>Crowdfunding</NavLink>
+            <NavLink to="/crowdfunding">Crowdfunding</NavLink>
             <NavLink to="/shop">Shop</NavLink>
             <NavLink>Special Request</NavLink>
             <NavLink>About us</NavLink>
