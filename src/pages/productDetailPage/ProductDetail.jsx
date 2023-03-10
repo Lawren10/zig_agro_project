@@ -14,6 +14,7 @@ import {
 import {
   SectionBody,
   Subtitle1,
+  Subtitle2,
   Body2,
   Body4,
 } from "../../styledComponents/globalComponents";
@@ -27,7 +28,36 @@ const ProductDetailPage = () => {
           <ProductDetailsTopContainer>
             <ProductImage />
             <ProductDescriptionBox>
-              <Body2> `</Body2>
+              <Body2>{"< Back to shop"}</Body2>
+              <Subtitle2 bold={"true"}>Yam 60KG</Subtitle2>
+              <Body2>
+                3 Reviews | <span>ADD A REVIEW</span>
+              </Body2>
+              <Subtitle2 bold={"true"}>N45,900.00</Subtitle2>
+              <Body4>
+                Availability:<ProductSpanText>In stock</ProductSpanText>
+              </Body4>
+              <Body4>
+                Product code:<ProductSpanText>#456788</ProductSpanText>
+              </Body4>
+              <Body4>
+                Tags:<ProductSpanText>Fashion, Hood,Classic</ProductSpanText>
+              </Body4>
+
+              <Body2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nulla cumque molestias asperiores architecto tempore
+                labore aperiam. Consequatur repellendus rem omnis voluptas qui
+                provident laboriosam, magnam quia, dolor minus, explicabo
+              </Body2>
+
+              <ProductDescriptionList>
+                <ListItem>lorem item list</ListItem>
+                <ListItem>lorem item list</ListItem>
+                <ListItem>lorem item list</ListItem>
+              </ProductDescriptionList>
+
+              <ProductAddToCartButton>ADD TO CART</ProductAddToCartButton>
             </ProductDescriptionBox>
           </ProductDetailsTopContainer>
         </SectionBody>

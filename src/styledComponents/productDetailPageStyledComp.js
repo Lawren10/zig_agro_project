@@ -20,9 +20,11 @@ export const ProductDescriptionBox = styled.div`
 `;
 
 export const ProductSpanText = styled.span`
-  font-size: 0.8rem;
-  color: ligthgreen;
+  font-size: 0.85rem;
+  color: lightgreen;
   font-weight: 400;
+  display: inline-block;
+  padding-left: 0.5rem;
 `;
 
 export const ProductLargeImage = styled.img`

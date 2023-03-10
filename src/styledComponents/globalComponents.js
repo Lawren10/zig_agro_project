@@ -65,8 +65,8 @@ export const Subtitle1 = styled.h3`
   font-weight: ${({ bold }) => (bold === "true" ? "700" : "500")};
 `;
 export const Subtitle2 = styled.h4`
-  font-size: 0.9rem;
-  color: gray;
+  font-size: ${({ bold }) => (bold === "true" ? "1.5rem" : "0.9rem")};
+  color: ${({ bold }) => (bold === "true" ? "black" : "gray")};
   font-weight: 800;
 `;
 
