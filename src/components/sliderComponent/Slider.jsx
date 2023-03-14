@@ -16,7 +16,7 @@ const Slider = ({ children }) => {
       } else {
         setSliderImage(sliderImage + 1);
       }
-    }, 3000);
+    }, 5000);
 
     return () => {
       clearTimeout(timeout);
