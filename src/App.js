@@ -12,9 +12,9 @@ function App() {
     <>
       <Navigation />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<CrowdFoundingPage />} />
         <Route path="/shop" element={<ShopPage />} />
-        <Route path="/crowdfunding" element={<CrowdFoundingPage />} />
+        <Route path="/crowdfunding" element={<HomePage />} />
         <Route path="/productdetail" element={<ProductDetailPage />} />
         <Route path="/cart" element={<CartPage />} />
       </Routes>

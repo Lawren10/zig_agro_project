@@ -6,7 +6,7 @@ import {
   ValueItemContainer,
   ValueItemIcon,
   PartnershipContainer,
-} from "../../styledComponents/crowdFundingStyledComp";
+} from "../../styledComponents/homePageStyledComp";
 
 import {
   Box,

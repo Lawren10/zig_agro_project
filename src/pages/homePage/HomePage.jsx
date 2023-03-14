@@ -1,135 +1,157 @@
 import React from "react";
+import FeatureSection from "../../components/homePageComponents/FeatureSection";
 import {
-  CrowdFundingItemContainer,
-  CrowdFundingItemCard,
-  CrowdFundingItemImage,
-  CrowdFundingItemButton,
-  FundingHeroTextContainer,
-  BenefitCard,
-  BenefitCardIcon,
-  PioneerSectionContainer,
-  PioneerSectionButton,
+  ProductCardContainer,
+  ProductCard,
+  CardWrapper,
+  ProductCardImg,
+  CardHeader,
+  CardHeaderText,
+  CardHeaderTextSec,
+  ProductCardBody,
+  ProductPrice,
+  CardTittleText,
+  CardBodyText,
+  ProductButtonContainer,
+  ProductButton,
+  ProductButtonOutlined,
+  PillButton,
 } from "../../styledComponents/homePageStyledComp";
-
 import {
-  Subtitle4,
-  Subtitle1,
-  Subtitle2,
-  Subtitle3,
   SectionBody,
-  Body3,
-  Subtitle5,
   SliderTextContainer,
-  SliderHeroText,
 } from "../../styledComponents/globalComponents";
-
+import ValueSection from "../../components/homePageComponents/ValueSection";
 import Slider from "../../components/sliderComponent/Slider";
 
 const HomePage = () => {
   return (
     <>
-      {/* hero section */}
+      {/* home slider */}
       <Slider>
-        <SliderTextContainer>
-          <SliderHeroText>
-            Digitizing the Food Supply Chain In Africa
-          </SliderHeroText>
-        </SliderTextContainer>
+        <SliderTextContainer />
       </Slider>
-      {/* crowd funding product section */}
+      {/*home page feature sections */}
+      <FeatureSection />
+      {/* home page product items section */}
       <SectionBody>
-        <FundingHeroTextContainer>
-          <Subtitle4>HOW WE SUPPORT SMALL HOLDER FARMERS</Subtitle4>
-          <Subtitle1 bold={"true"}>OUR PRODUCTS:</Subtitle1>
-        </FundingHeroTextContainer>
-
-        <SectionBody>
-          <CrowdFundingItemContainer>
-            <CrowdFundingItemCard>
-              <CrowdFundingItemImage />
-              <Subtitle2>FResho Social Commerce</Subtitle2>
-              <Body3>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
-                modi, ipsa architecto doloribus voluptatibus vero mollitia quod
-                nesciunt aliquid rerum, corrupti explicabo nostrum, ad cumque
-                vel eveniet maiores beatae neque?
-              </Body3>
-              <CrowdFundingItemButton>Start earning</CrowdFundingItemButton>
-            </CrowdFundingItemCard>
-
-            <CrowdFundingItemCard>
-              <CrowdFundingItemImage />
-              <Subtitle2>FResho Social Commerce</Subtitle2>
-              <Body3>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
-                modi, ipsa architecto doloribus voluptatibus vero mollitia quod
-                nesciunt aliquid rerum, corrupti explicabo nostrum, ad cumque
-                vel eveniet maiores beatae neque?
-              </Body3>
-              <CrowdFundingItemButton>Start earning</CrowdFundingItemButton>
-            </CrowdFundingItemCard>
-
-            <CrowdFundingItemCard>
-              <CrowdFundingItemImage />
-              <Subtitle2>FResho Social Commerce</Subtitle2>
-              <Body3>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
-                modi, ipsa architecto doloribus voluptatibus vero mollitia quod
-                nesciunt aliquid rerum, corrupti explicabo nostrum, ad cumque
-                vel eveniet maiores beatae neque?
-              </Body3>
-              <CrowdFundingItemButton>Start earning</CrowdFundingItemButton>
-            </CrowdFundingItemCard>
-          </CrowdFundingItemContainer>
-        </SectionBody>
-
-        {/* crowd funding benefits section */}
-
-        <FundingHeroTextContainer>
-          <Subtitle3 large={"true"}>What's in it for you?</Subtitle3>
-        </FundingHeroTextContainer>
-        <SectionBody>
-          <CrowdFundingItemContainer>
-            <BenefitCard>
-              <BenefitCardIcon src="/images/connect.jpg" />
-              <Subtitle5>Connect with our Farmers</Subtitle5>
-              <Body3 large={"true"}>
-                We provide you with an opportunity to directly affect lives of
-                farmers
-              </Body3>
-            </BenefitCard>
-
-            <BenefitCard>
-              <BenefitCardIcon src="/images/fruitbasket.jpg" />
-              <Subtitle5>Connect with our Farmers</Subtitle5>
-              <Body3 large={"true"}>
-                We provide you with an opportunity to directly affect lives of
-                farmers
-              </Body3>
-            </BenefitCard>
-
-            <BenefitCard>
-              <BenefitCardIcon src="/images/grow.jpg" />
-              <Subtitle5>Connect with our Farmers</Subtitle5>
-              <Body3 large={"true"}>
-                We provide you with an opportunity to directly affect lives of
-                farmers
-              </Body3>
-            </BenefitCard>
-          </CrowdFundingItemContainer>
-        </SectionBody>
-        {/* pioneer section */}
-
-        <PioneerSectionContainer>
-          <Subtitle3 large={"true"}>
-            You can be a pioneer of hope for farmers
-          </Subtitle3>
-          <Body3 large={"true"}>
-            We provide you with an opportunity to directly affect lives of
-            farmers
-          </Body3>
-          <PioneerSectionButton>GET STARTED TODAY</PioneerSectionButton>
-        </PioneerSectionContainer>
+        <ProductCardContainer>
+          {/* produdct 1 */}
+          <ProductCard>
+            <PillButton>Available</PillButton>
+            <ProductCardImg />
+            <CardWrapper>
+              <CardHeader>
+                <CardHeaderText>
+                  Rice I_2023{" "}
+                  <CardHeaderTextSec>(Oryza Sativa)</CardHeaderTextSec>
+                </CardHeaderText>
+              </CardHeader>
+              <ProductCardBody>
+                {/* card body left side */}
+                <div>
+                  <CardTittleText>Cost per unit</CardTittleText>
+                  <ProductPrice>GH 221.30</ProductPrice>
+                  <CardTittleText>farming start date</CardTittleText>
+                  <CardBodyText>20th may 2023</CardBodyText>
+                </div>
+                {/* card body right side */}
+                <div>
+                  <CardTittleText align={"end"}>Ros</CardTittleText>
+                  <CardBodyText align={"end"}>15.6% - 17.8%</CardBodyText>
+                  <CardTittleText align={"end"}>
+                    farming end date
+                  </CardTittleText>
+                  <CardBodyText align={"end"}>30th Nov 2023</CardBodyText>
+                </div>
+              </ProductCardBody>
+              <CardTittleText>Farm Location</CardTittleText>
+              <CardBodyText>Asuturare,Greater Accra - Ghana</CardBodyText>
+              <ProductButtonContainer>
+                <ProductButton>Sponsor Farm</ProductButton>
+                <ProductButtonOutlined>Read...</ProductButtonOutlined>
+              </ProductButtonContainer>
+            </CardWrapper>
+          </ProductCard>
+          {/* produdct 2 */}
+          <ProductCard>
+            <PillButton>Available</PillButton>
+            <ProductCardImg />
+            <CardWrapper>
+              <CardHeader>
+                <CardHeaderText>
+                  Rice I_2023{" "}
+                  <CardHeaderTextSec>(Oryza Sativa)</CardHeaderTextSec>
+                </CardHeaderText>
+              </CardHeader>
+              <ProductCardBody>
+                {/* card body left side for product2 */}
+                <div>
+                  <CardTittleText>Cost per unit</CardTittleText>
+                  <ProductPrice>GH 221.30</ProductPrice>
+                  <CardTittleText>farming start date</CardTittleText>
+                  <CardBodyText>20th may 2023</CardBodyText>
+                </div>
+                {/* card body right side for product2*/}
+                <div>
+                  <CardTittleText align={"end"}>Ros</CardTittleText>
+                  <CardBodyText align={"end"}>15.6% - 17.8%</CardBodyText>
+                  <CardTittleText align={"end"}>
+                    farming end date
+                  </CardTittleText>
+                  <CardBodyText align={"end"}>30th Nov 2023</CardBodyText>
+                </div>
+              </ProductCardBody>
+              <CardTittleText>Farm Location</CardTittleText>
+              <CardBodyText>Asuturare,Greater Accra - Ghana</CardBodyText>
+              <ProductButtonContainer>
+                <ProductButton>Sponsor Farm</ProductButton>
+                <ProductButtonOutlined>Read...</ProductButtonOutlined>
+              </ProductButtonContainer>
+            </CardWrapper>
+          </ProductCard>
+          {/* produdct 3 */}
+          <ProductCard>
+            <PillButton>Available</PillButton>
+            <ProductCardImg />
+            <CardWrapper>
+              <CardHeader>
+                <CardHeaderText>
+                  Rice I_2023{" "}
+                  <CardHeaderTextSec>(Oryza Sativa)</CardHeaderTextSec>
+                </CardHeaderText>
+              </CardHeader>
+              <ProductCardBody>
+                {/* card body left side for product3 */}
+                <div>
+                  <CardTittleText>Cost per unit</CardTittleText>
+                  <ProductPrice>GH 221.30</ProductPrice>
+                  <CardTittleText>farming start date</CardTittleText>
+                  <CardBodyText>20th may 2023</CardBodyText>
+                </div>
+                {/* card body right side for product3*/}
+                <div>
+                  <CardTittleText align={"end"}>Ros</CardTittleText>
+                  <CardBodyText align={"end"}>15.6% - 17.8%</CardBodyText>
+                  <CardTittleText align={"end"}>
+                    farming end date
+                  </CardTittleText>
+                  <CardBodyText align={"end"}>30th Nov 2023</CardBodyText>
+                </div>
+              </ProductCardBody>
+              <CardTittleText>Farm Location</CardTittleText>
+              <CardBodyText>Asuturare,Greater Accra - Ghana</CardBodyText>
+              <ProductButtonContainer>
+                <ProductButton>Sponsor Farm</ProductButton>
+                <ProductButtonOutlined>Read...</ProductButtonOutlined>
+              </ProductButtonContainer>
+            </CardWrapper>
+          </ProductCard>
+        </ProductCardContainer>
+      </SectionBody>
+      {/* Value proposition Section */}
+      <SectionBody>
+        <ValueSection />
       </SectionBody>
     </>
   );
