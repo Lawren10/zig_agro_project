@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.section`
+  padding: 1rem 0;
   margin-top: 4rem;
+  background-color: #fafafa;
 `;
 export const FooterInnerContainer = styled.div`
   display: flex;
@@ -19,6 +21,5 @@ export const FooterSocialContainer = styled.div`
   gap: 1.5rem;
 `;
 export const FooterSocialIcon = styled.i`
-  padding: 1rem;
-  background-color: lightgray;
+  color: green;
 `;

@@ -22,17 +22,18 @@ export const TopNavInnerContainer = styled.div`
 
 export const BottomNavContainer = styled(TopNavContainer)`
   background-color: white;
-  padding: 0.5rem 4rem;
+  padding: 0rem 4rem;
 `;
 
-export const NavLogo = styled.div`
-  background-color: green;
-  padding: 1rem;
+export const NavLogo = styled.img`
+  width: 5rem;
 `;
 
 export const BottomNavInnerContainer = styled(TopNavInnerContainer)``;
 
 export const CartBox = styled.div`
-  padding: 1rem;
-  background-color: gray;
+  padding: .5rem
+  color:black;
+  font-size:1.8rem;
+  font-weight:500;
 `;

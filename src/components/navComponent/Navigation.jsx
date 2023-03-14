@@ -10,6 +10,7 @@ import {
 } from "./navStyledComp";
 
 import { NavLink, TopNavText } from "../../styledComponents/globalComponents";
+import { SlBag } from "react-icons/sl";
 
 const Navigation = () => {
   return (
@@ -23,7 +24,7 @@ const Navigation = () => {
           </TopNavInnerContainer>
         </TopNavContainer>
         <BottomNavContainer>
-          <NavLogo />
+          <NavLogo src="/images/logo.jpg" />
           <BottomNavInnerContainer>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/crowdfunding">Crowdfunding</NavLink>
@@ -32,7 +33,9 @@ const Navigation = () => {
             <NavLink>About us</NavLink>
             <NavLink>Contact</NavLink>
           </BottomNavInnerContainer>
-          <CartBox />
+          <CartBox>
+            <SlBag />
+          </CartBox>
         </BottomNavContainer>
       </NavContainer>
     </>

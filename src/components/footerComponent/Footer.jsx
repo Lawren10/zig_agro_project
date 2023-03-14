@@ -2,7 +2,6 @@ import React from "react";
 import {
   FooterContainer,
   FooterInnerContainer,
-  FooterSocailOuterContainer,
   FooterSocialContainer,
   FooterSocialIcon,
 } from "./footerStyledComp";
@@ -11,10 +10,17 @@ import {
   SectionBody,
   Logo,
   Subtitle2,
-  Subtitle1,
   FooterLink,
-  FooterText,
+  FooterBodyText,
+  FooterEmailText,
 } from "../../styledComponents/globalComponents";
+
+import { BsFacebook } from "react-icons/bs";
+import {
+  AiFillTwitterCircle,
+  AiFillInstagram,
+  AiFillYoutube,
+} from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -22,15 +28,13 @@ const Footer = () => {
       <FooterContainer>
         <SectionBody>
           <FooterInnerContainer>
+            <Logo src="/images/logo.jpg" />
             <div>
-              <Logo />
+              <FooterBodyText>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+              </FooterBodyText>
+              <FooterEmailText>info@zig-agro.com</FooterEmailText>
               <Subtitle2>+234 (0) 706 796 3016</Subtitle2>
-              <FooterSocialContainer>
-                <FooterSocialIcon />
-                <FooterSocialIcon />
-                <FooterSocialIcon />
-                <FooterSocialIcon />
-              </FooterSocialContainer>
             </div>
             <div>
               <Subtitle2>Navigation</Subtitle2>
@@ -47,23 +51,27 @@ const Footer = () => {
               <FooterLink>ZigAgro link</FooterLink>
             </div>
             <div>
-              <Subtitle1>Get fresh food produce</Subtitle1>
+              <Subtitle2>Follow Us</Subtitle2>
+              <FooterSocialContainer>
+                <FooterSocialIcon>
+                  <BsFacebook />
+                </FooterSocialIcon>
+                <FooterSocialIcon>
+                  <AiFillTwitterCircle />
+                </FooterSocialIcon>
+                <FooterSocialIcon>
+                  <AiFillInstagram />
+                </FooterSocialIcon>
+                <FooterSocialIcon>
+                  <AiFillYoutube />
+                </FooterSocialIcon>
+              </FooterSocialContainer>
+              <FooterBodyText>
+                copyright @ Farmcrowdy. all rights reserved.
+              </FooterBodyText>
             </div>
           </FooterInnerContainer>
         </SectionBody>
-        <FooterSocailOuterContainer>
-          <SectionBody>
-            <FooterInnerContainer>
-              <FooterSocialContainer>
-                <FooterSocialIcon />
-                <FooterSocialIcon />
-                <FooterSocialIcon />
-                <FooterSocialIcon />
-              </FooterSocialContainer>
-              <FooterText>2023 All Rights Reserved</FooterText>
-            </FooterInnerContainer>
-          </SectionBody>
-        </FooterSocailOuterContainer>
       </FooterContainer>
     </>
   );

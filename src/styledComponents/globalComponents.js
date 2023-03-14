@@ -12,11 +12,11 @@ export const NavLink = styled(Link)`
 export const FooterLink = styled(NavLink)`
   display: block;
   padding: 0.5rem 0;
+  font-size: 0.7rem;
 `;
 
 export const Logo = styled.img`
-  background-color: green;
-  padding: 1rem;
+  width: 5rem;
 `;
 
 export const TopNavText = styled.p`
@@ -45,6 +45,44 @@ export const FlexCenter = styled.div`
   align-items: center;
   justify-content: center;
   gap: ${({ gap }) => (gap ? gap : "0")};
+`;
+
+// slider styles
+export const SliderSection = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(to top, rgba(125, 255, 177, 1), transparent);
+  position: relative;
+`;
+
+export const SliderIMage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+`;
+
+export const SliderTextContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); ;
+`;
+
+export const SliderHeroText = styled.h1`
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+  text-shadow: 1px 1px rgba(0, 0, 0, 1);
 `;
 
 export const Header1 = styled.h1`
@@ -110,8 +148,23 @@ export const Body3 = styled.p`
 `;
 
 export const Body4 = styled.p`
-  font-size: 0.8rem;
+  font-size: ${({ cart }) => (cart === "true" ? "1.2rem" : "0.8rem")};
   color: black;
-  font-weight: 400;
+  font-weight: ${({ cart }) => (cart === "true" ? "800" : "400")};
   line-height: 1.2rem;
+`;
+
+export const FooterBodyText = styled.p`
+  width: 10rem;
+  font-size: 0.7rem;
+  color: gray;
+  font-weight: 300;
+  line-height: 1.5rem;
+`;
+
+export const FooterEmailText = styled.p`
+  font-size: 0.7rem;
+  color: green;
+  font-weight: 800;
+  line-height: 1.5rem;
 `;
