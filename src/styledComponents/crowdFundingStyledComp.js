@@ -13,6 +13,11 @@ export const CrowdFundingItemContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
+  @media (max-width: 550px) {
+    /* border: 1px solid red; */
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 
 export const CrowdFundingItemCard = styled.div`
@@ -20,6 +25,10 @@ export const CrowdFundingItemCard = styled.div`
   border: none;
   outline: none;
   cursor: pointer;
+
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 
 export const CrowdFundingItemImage = styled.img`
@@ -45,6 +54,9 @@ export const BenefitCard = styled.div`
   width: 33.3%;
   text-align: center;
   margin-top: 3rem;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 
 export const BenefitCardIcon = styled.img`

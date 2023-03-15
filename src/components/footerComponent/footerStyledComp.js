@@ -9,6 +9,12 @@ export const FooterInnerContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+    /* border: 1px solid red; */
+  }
 `;
 export const FooterSocailOuterContainer = styled.div`
   background-color: black;

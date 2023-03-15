@@ -13,12 +13,22 @@ export const ShopProductContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding: 3rem 0 3rem 4rem;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    padding: 3rem 0.5rem;
+  }
 `;
 export const ShopFilterProductContainer = styled.div`
   width: 20%;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 export const ShopProductListContainer = styled.div`
   width: 80%;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 export const ShopProductListItemContainer = styled.div`
   width: 100%;
@@ -27,6 +37,9 @@ export const ShopProductListItemContainer = styled.div`
   justify-content: flex-start;
   gap: 2rem;
   flex-wrap: wrap;
+  @media (max-width: 550px) {
+    gap: 1rem;
+  }
 `;
 
 export const SortResultBox = styled.div`
@@ -68,6 +81,20 @@ export const FilterItemContainer = styled.div`
   justify-content: flex-start;
   gap: 1rem;
   padding: 0.3rem 0;
+  @media (max-width: 550px) {
+    gap: 0.5rem;
+  }
+`;
+
+export const FilterItemWapper = styled.div`
+  @media (max-width: 550px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 `;
 
 export const ShopProductCard = styled.div`
@@ -81,6 +108,9 @@ export const ShopProductCard = styled.div`
     box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+  }
+  @media (max-width: 550px) {
+    width: 46%;
   }
 `;
 

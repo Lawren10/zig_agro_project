@@ -26,7 +26,7 @@ const ValueSection = () => {
       <ValueSectionContainer>
         {/* value section right side */}
         <ValueSectionInnerContainerLeft>
-          <Logo />
+          <Logo src="/images/logo.jpg" />
           <Header1>WHY ZIGAGRO?</Header1>
           <Body1>
             simply dummy text of the printing and typesetting industry. Lorem
@@ -42,7 +42,7 @@ const ValueSection = () => {
         </ValueSectionInnerContainerLeft>
         {/* value section right side */}
         <ValueSectionInnerContainerRight>
-          <FlexCenter gap={"2rem"}>
+          <FlexCenter gap={"2rem"} column={"true"}>
             <Box>
               <ValueItemContainer>
                 <ValueItemIcon />
@@ -65,7 +65,7 @@ const ValueSection = () => {
             </Box>
           </FlexCenter>
           <div style={{ padding: "1rem 0" }}></div>
-          <FlexCenter gap={"2rem"}>
+          <FlexCenter gap={"2rem"} column={"true"}>
             <Box>
               <ValueItemContainer>
                 <ValueItemIcon />

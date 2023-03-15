@@ -8,15 +8,26 @@ export const ProductDetailsTopContainer = styled.section`
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 export const ProductImage = styled.img`
   width: 50%;
   height: 100%;
   background-color: lightgray;
+  @media (max-width: 550px) {
+    width: 100%;
+    height: 20rem;
+  }
 `;
 
 export const ProductDescriptionBox = styled.div`
   width: 50%;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 
 export const ProductSpanText = styled.span`

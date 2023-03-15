@@ -31,6 +31,9 @@ export const FooterText = styled(TopNavText)`
 
 export const SectionBody = styled.section`
   padding: 0.5rem 4rem;
+  @media (max-width: 550px) {
+    padding: 0.5rem 0.6rem;
+  }
 `;
 
 export const Box = styled.div`
@@ -38,6 +41,7 @@ export const Box = styled.div`
   background-color: white;
   box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
+  margin-top: ${({ gap }) => (gap ? gap : "0")};
 `;
 
 export const FlexCenter = styled.div`
@@ -45,6 +49,9 @@ export const FlexCenter = styled.div`
   align-items: center;
   justify-content: center;
   gap: ${({ gap }) => (gap ? gap : "0")};
+  @media (max-width: 550px) {
+    flex-direction: ${({ column }) => (column === "true" ? "column" : "row")};
+  }
 `;
 
 // slider styles
@@ -83,6 +90,9 @@ export const SliderHeroText = styled.h1`
   color: white;
   font-weight: 800;
   text-shadow: 1px 1px rgba(0, 0, 0, 1);
+  @media (max-width: 550px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Header1 = styled.h1`

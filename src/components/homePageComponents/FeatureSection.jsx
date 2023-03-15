@@ -27,14 +27,14 @@ const FeatureSection = () => {
             </FeatureItemContainer>
           </Box>
           {/* feature item 3 */}
-          <Box>
+          <Box gap={"0.5rem"}>
             <FeatureItemContainer>
               <FeatureItemPic />
               <FeatureItemText>Promising return after harvest</FeatureItemText>
             </FeatureItemContainer>
           </Box>
           {/* feature item 4 */}
-          <Box>
+          <Box gap={"0.5rem"}>
             <FeatureItemContainer>
               <FeatureItemPic />
               <FeatureItemText>Promising return after harvest</FeatureItemText>

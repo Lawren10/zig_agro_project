@@ -7,13 +7,24 @@ export const FeaturesContainer = styled.section`
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 1rem 0 1rem;
+  @media (max-width: 550px) {
+    flex-wrap: wrap;
+    padding: 1.5rem 0.5rem 0 0.5rem;
+  }
 `;
 
 export const FeatureItemContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   width: 15rem;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    width: 8rem;
+    text-align: center;
+    column-gap: 1rem;
+  }
 `;
 export const FeatureItemPic = styled.div`
   padding: 2rem;
@@ -35,6 +46,10 @@ export const ProductCardContainer = styled.div`
   justify-content: center;
   margin-top: 2rem;
   gap: 3rem;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    padding: 0 0.5rem;
+  }
 `;
 
 export const ProductCard = styled.div`
@@ -48,6 +63,10 @@ export const ProductCard = styled.div`
   &:hover {
     transform: scale(1.01);
     transition: all 0.3s ease-in-out;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
   }
 `;
 export const CardWrapper = styled.div`
@@ -158,13 +177,26 @@ export const ValueSectionContainer = styled.div`
     transparent,
     transparent
   );
+
+  @media (max-width: 550px) {
+    padding: 6rem 1rem 2rem 1rem;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(125, 255, 177, 0.3), transparent);
+    gap: 4rem;
+  }
 `;
 
 export const ValueSectionInnerContainerLeft = styled.div`
   width: 40%;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 export const ValueSectionInnerContainerRight = styled.div`
   width: 60%;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 
 export const ValueItemContainer = styled.div`
@@ -186,4 +218,8 @@ export const PartnershipContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
 `;
