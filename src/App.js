@@ -7,6 +7,7 @@ import CrowdFoundingPage from "./pages/crowdFundingPage/CrowdFounding";
 import ProductDetailPage from "./pages/productDetailPage/ProductDetail";
 import CartPage from "./pages/cartPage/CartPage";
 import LoginPage from "./pages/loginPage/LoginPage";
+import Accounts from "./pages/paymentPage/Accounts";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/productdetail" element={<ProductDetailPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/account" element={<Accounts />} />
       </Routes>
       <Footer />
     </>
