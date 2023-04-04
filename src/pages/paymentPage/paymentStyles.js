@@ -4,14 +4,14 @@ import { Paper, Avatar, Box } from "@mui/material";
 
 export const AccountTopContainer = styled(Paper)`
   width: 100%;
-  height: 10rem;
+  height: auto;
   border-radius: 0.5rem;
-  padding: 0.5rem 0;
+  padding: 1.5rem 1rem 0.5rem 1rem;
   background: linear-gradient(
     90deg,
-    hsla(113, 96%, 81%, 1) 0%,
-    hsla(188, 90%, 51%, 1) 100%
-  ); ;
+    hsla(186, 66%, 40%, 1) 0%,
+    hsla(188, 78%, 69%, 1) 100%
+  );
 `;
 
 export const AccountAvatar = styled(Avatar)`
