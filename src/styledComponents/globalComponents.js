@@ -19,6 +19,10 @@ export const Logo = styled.img`
   width: 5rem;
 `;
 
+export const LargeLogo = styled.img`
+  width: ${({ w }) => (w ? w : "5rem")};
+`;
+
 export const TopNavText = styled.p`
   font-size: 0.9rem;
   font-weight: 500;
@@ -177,4 +181,35 @@ export const FooterEmailText = styled.p`
   color: green;
   font-weight: 800;
   line-height: 1.5rem;
+`;
+
+export const InputText = styled.input`
+  outline: none;
+  border: none;
+  width: ${({ size }) => (size ? size : "90%")};
+  padding: 1.2rem 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
+`;
+
+export const InputLabel = styled.label`
+  display: block;
+  padding: 2rem 0 0.3rem 0;
+  font-size: 0.85rem;
+  color: gray;
+  font-weight: 800;
+`;
+
+export const AuthButton = styled.button`
+  outline: none;
+  border: none;
+  background-color: orange;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 800;
+  border-radius: 5rem;
+  margin-top: 1.5rem;
 `;
